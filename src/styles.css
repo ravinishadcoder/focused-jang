@@ -1,0 +1,21 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.your-item:after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: black;
+}
+.your-item {
+  position: relative;
+}
+
+.slick-slide.last-active .your-item::after {
+  display: none;
+}
